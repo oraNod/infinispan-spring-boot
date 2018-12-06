@@ -44,7 +44,7 @@ Add `infinispan-bom` to your `pom.xml` file before the starter dependenices, as 
        <dependency>
            <groupId>org.infinispan</groupId>
            <artifactId>infinispan-bom</artifactId>
-           <version>{version.infinispan}</version>
+           <version>${version.infinispan}</version>
            <type>pom</type>
            <scope>import</scope>
        </dependency>
@@ -275,7 +275,7 @@ https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache
 
 === Enabling Spring Session Support
 
-http://infinispan.org/docs/stable/user_guide/user_guide.html#externalizing_session_using_spring_session[Infinispan Spring Session support] is built on
+http://infinispan.org/docs/stable/user_guide/user_guide.html#spring_externalize_sessions[Infinispan Spring Session support] is built on
 `SpringRemoteCacheManager` and `SpringEmbeddedCacheManager`. This starter produces those beans by default.
 
 To use Spring Session in your project, do the following:
